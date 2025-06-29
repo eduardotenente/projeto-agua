@@ -35,13 +35,16 @@ nav{
     margin-left: -9px;
 }
 
-main{}
-
-main h2{}
+main{
+    color: var(--cinza-escuro);
+}
 
 article{
-    color: var(--cinza-escuro);
     
+}
+
+article h2{
+    color: var();
 }
 
 article h3{
@@ -49,9 +52,14 @@ article h3{
     font-size: 1.4em;
 }
 
+div#agua{
+    background: url(../imagem/) no-repeat center bottom fixed;
+    background-size: cover;
+}
+
 table{
     border-collapse: collapse;
-    width: 500px;
+    width: 800px;
 }
 
 td, th{
