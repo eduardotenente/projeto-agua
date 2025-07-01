@@ -1,0 +1,2 @@
+background: url(../imagem/) no-repeat center bottom fixed;
+    background-size: cover;

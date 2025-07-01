@@ -1,0 +1,9 @@
+Azul-claro (#4FC3F7) - cor dominante em  menus, banners  e botões principais.
+---
+Verde-água (#81C784) - complemento em ícones, gráficos ou para seções como "Dicas de água".
+---
+Cinza-claro (#F5F5F5) - plano de fundo para não cansar a vista.
+---
+Azul-petróleo (#0277BD) - títulos para chamar atenção.
+---
+Cinza-escuro (#333333) - Legibilidade do texto.
