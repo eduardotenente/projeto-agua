@@ -88,15 +88,11 @@ article h3{
 
 article p{
     line-height: 2em;
-    color: var(--cinza-claro);
-}
-
-div.fundo{
-    background-color: rgba(51, 51, 51, 0.603);
+    color: var(--cinza-escuro);
 }
 
 div#agua{
-    
+
 }
 
 section{
