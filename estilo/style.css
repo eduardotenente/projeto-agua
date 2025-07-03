@@ -64,6 +64,8 @@ main{
     margin: auto;
     padding: 10px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.404);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 article.artigo1{
@@ -72,8 +74,16 @@ article.artigo1{
 
 article.artigo2 {
     margin-bottom: 50px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+}
+
+article.artigo2 > h2{
+    padding-top: 50px;
+    text-align: center;
+}
+
+article.artigo2 > ul{
+    text-align: center;
+    list-style-position: inside
 }
 
 article h2{
@@ -84,10 +94,12 @@ article h2{
 article h3{
     color: var(--cinza-escuro);
     font-size: 1.5em;
+    padding-top: 15px;
 }
 
 article p{
     line-height: 2em;
+    font-size: 17px;
     color: var(--cinza-escuro);
 }
 
@@ -95,37 +107,77 @@ div#agua{
 
 }
 
-section{
+section.tabela{
     overflow-x: auto;
 }
 
 table{
     border-collapse: collapse;
     width: 800px;
-    margin-bottom: 15px;
+    margin: 40px auto 15px auto;
+}
+
+caption{
+    font-family: 'Oswald';
+    font-size: 2em;
+    margin-bottom: 3px;
+}
+
+thead > tr > th{
+    background-color: var(--azul-claro);
+}
+
+tbody > tr:nth-child(even) {
+    background-color: var(--cinza-claro);
 }
 
 td, th{
-    border: 2px solid rgba(0, 255, 255, 0.829);
+    border: 2px solid var(--azul-petroleo);
+    padding: 10px;
+    text-align: center;
 }
 
 footer{
     background-color: #4FC3F7;
-    margin: -9px -9px -20px -9px;
+    height: 226px;
+    margin: 45px -9px -20px -9px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.514);
 }
 
-footer > p{
+footer > section{
+    display: inline-block;
+    height: 120px;
+    padding-top: 10px;
+    border-right: 2px solid var(--cinza-claro);
+    text-align: justify;
+}
+
+footer section#credito{
+    display: block;
+    border: none;
+    text-align: center;
+    padding-top: 20px;
+}
+
+footer > section > p.content{
     font-size: 1.2em;
     font-style: italic;
-    text-align: center;
 }
 
-footer > p > a{
-    text-decoration: none;
+footer > section > p.rodape{
     color: var(--cinza-escuro);
+    font-weight: bold;
 }
 
-footer > p > a:hover{
-    text-decoration: underline;
+footer > section > button{
+    padding: 10px;
+    margin-left: 15px;
+    border-radius: 7px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+footer > section > button > a{
+    text-decoration: none;
+    color: var(--azul-petroleo);
 }
