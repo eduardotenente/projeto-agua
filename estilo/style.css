@@ -32,7 +32,7 @@ header{
 }
 
 header h1{
-    color: #a7d0e6;
+    color: var(--branco);
     font-family: 'Bebas Neue';
     font-size: 4.5em;
     text-transform: uppercase;
@@ -84,6 +84,10 @@ article.artigo2 > h2{
 article.artigo2 > ul{
     text-align: center;
     list-style-position: inside
+}
+
+article.artigo2 > ul > li{
+    font-weight: bold;
 }
 
 article h2{
