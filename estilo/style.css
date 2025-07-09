@@ -62,20 +62,23 @@ nav h1{
 }
 
 main{
+    width: 96vw;
     min-height: 400px;
     max-height: 2300px;
-    margin: auto;
-    padding: 10px;
+    margin-left: -9px;
+    margin-right: -9px;
+    padding: 27px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.404);
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
 }
 
 article.artigo1{
-    
+    background-image: url();
 }
 
 article.artigo2 {
+    background-image: url();
     margin-bottom: 50px;
 }
 
@@ -110,7 +113,7 @@ section#box{
     text-align: center;
     font-weight: bold;
 
-    margin: 50px -9px 50px -9px;
+    margin: 50px -27px 50px -27px;
     padding-top: 50px;
     padding-bottom: 50px;
     box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.521);
@@ -153,6 +156,8 @@ td, th{
 
 footer{
     background-color: #4FC3F7;
+    min-width: 1000px;
+    max-width: 2000px;
     height: 406px;
     margin: 45px -9px -20px -9px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.514);
@@ -178,19 +183,6 @@ footer > section#border-right{
     border-right: 2px solid var(--cinza-claro);
 }
 
-footer section#credito{
-    display: block;
-    border: none;
-    text-align: center;
-    padding-top: 40px;
-    margin-left: 0px;
-}
-
-footer > section#credito > p#cr {
-    font-family: 'Oswald';
-    font-size: 1.4em;
-    font-weight: bold;
-}
 
 footer > section > p.content{
     font-size: 1.4em;
@@ -227,4 +219,22 @@ footer > section > button > a{
 footer > section > button:hover{
     background-color: #a7d0e6;
     transition-duration: 0.7s;
+}
+
+footer section#credito{
+    display: block;
+    border: none;
+    text-align: center;
+    padding-top: 40px;
+    margin-left: 0px;
+}
+
+footer > section#credito > p#cr {
+    font-family: 'Oswald';
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+footer > section#credito > p#cr > a:hover {
+    text-decoration: underline;
 }
