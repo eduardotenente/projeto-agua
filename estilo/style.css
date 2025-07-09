@@ -21,6 +21,9 @@ body{
     --cinza-claro: lightgray;
     --azul-petroleo: #0277BD;
     --cinza-escuro: #333333;
+
+    --fonte-titulo: 'Bebas Neue';
+    --fonte-subtitulo: 'Oswald';
 }
 
 header{
@@ -81,17 +84,7 @@ article.artigo2 > h2{
     text-align: center;
 }
 
-article.artigo2 > ul{
-    text-align: center;
-    list-style-position: inside
-}
-
-article.artigo2 > ul > li{
-    font-weight: bold;
-}
-
 article h2{
-    color: var();
     font-size: 2em;
 }
 
@@ -109,6 +102,23 @@ article p{
 
 div#agua{
 
+}
+
+section#box{
+    background-color: var(--branco);
+    list-style-position: inside;
+    text-align: center;
+    font-weight: bold;
+
+    margin: 50px -9px 50px -9px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.521);
+}
+
+section#box > h2{
+    font-family: var(--fonte-subtitulo);
+    font-size: 2.5em;
 }
 
 section.tabela{
