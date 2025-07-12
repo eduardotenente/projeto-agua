@@ -83,8 +83,10 @@ article.artigo2 {
 }
 
 article.artigo2 > h2{
-    padding-top: 50px;
+    font-family: 'Oaswld';
+    font-size: 2.5em;
     text-align: center;
+    padding-top: 50px;
 }
 
 article h2{
