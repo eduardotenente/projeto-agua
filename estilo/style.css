@@ -12,22 +12,22 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #a5a1a1b4;
+    background: black url(../imagem/image-from-rawpixel-id-3864364-original\ -\ Copia.jpg) center center no-repeat fixed;
+    background-size: cover;
 }
 
 :root{
-    --azul-claro: #4FC3F7;
+    --preto: rgba(0, 0, 0, 0.466);
     --branco: rgb(248, 237, 237);
-    --cinza-claro: lightgray;
+    --cinza-claro: rgb(175, 174, 174);
+    --azul-claro: #4FC3F7;
     --azul-petroleo: #0277BD;
-    --cinza-escuro: #333333;
 
     --fonte-titulo: 'Bebas Neue';
     --fonte-subtitulo: 'Oswald';
 }
 
 header{
-    background-image: linear-gradient(to bottom, var(--azul-claro), var(--azul-petroleo));
     padding: 20px;
     margin-top: -9px;
     margin-right: -9px;
@@ -40,17 +40,15 @@ header h1{
     font-size: 4.5em;
     text-transform: uppercase;
     text-align: center;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.582);
+    text-shadow: 3px -2px 0px rgba(0, 0, 0, 0.582);
 }
 
 nav{
-    background-color: var(--azul-petroleo);
     color: var(--branco);
     padding: 1px;
     margin-top: -9px;
     margin-right: -9px;
     margin-left: -9px;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.514);
 }
 
 nav h1{
@@ -58,23 +56,39 @@ nav h1{
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.678);
     font-style: italic;
     font-family: 'Oswald';
-    font-size: 2em;
+    font-size: 2.3em;
 }
 
 main{
     width: 96vw;
     min-height: 400px;
-    max-height: 2300px;
+    max-height: 2825px;
     margin-left: -9px;
     margin-right: -9px;
     padding: 27px;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.404);
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
 }
 
 article.artigo1{
-    background-image: url();
+    color: var(--branco);
+    border-radius: 10px;
+}
+
+article.artigo1 > h2 {
+    background-image: linear-gradient(to right, var(--azul-claro), #006B73);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.459);
+    padding: 5px 30px 5px 30px;
+    margin-right: 700px;
+    font-size: 2em;
+}
+
+article.artigo1 > section {
+    background-color: var(--preto);
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
 }
 
 article.artigo2 {
@@ -83,18 +97,15 @@ article.artigo2 {
 }
 
 article.artigo2 > h2{
-    font-family: 'Oaswld';
+    font-family: var(--fonte-subtitulo);
     font-size: 2.5em;
     text-align: center;
+    color: var(--branco);
+    text-shadow: 5px 3px 10px rgba(0, 0, 0, 0.582);
     padding-top: 50px;
 }
 
-article h2{
-    font-size: 2em;
-}
-
 article h3{
-    color: var(--cinza-escuro);
     font-size: 1.5em;
     padding-top: 15px;
 }
@@ -102,11 +113,6 @@ article h3{
 article p{
     line-height: 2em;
     font-size: 17px;
-    color: var(--cinza-escuro);
-}
-
-div#agua{
-
 }
 
 section#box{
@@ -115,10 +121,12 @@ section#box{
     text-align: center;
     font-weight: bold;
 
-    margin: 50px -27px 50px -27px;
+    margin: 200px 400px 200px 400px;
     padding-top: 50px;
     padding-bottom: 50px;
     box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.521);
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
 }
 
 section#box > h2{
@@ -128,12 +136,14 @@ section#box > h2{
 
 section.tabela{
     overflow-x: auto;
+    margin: 50px 400px 50px 400px;
 }
 
 table{
     border-collapse: collapse;
-    width: 800px;
-    margin: 40px auto 15px auto;
+    width: 700px;
+    padding: 20px;
+    margin: 40px auto 40px auto;
 }
 
 caption{
@@ -150,10 +160,15 @@ tbody > tr:nth-child(even) {
     background-color: var(--cinza-claro);
 }
 
+tbody > tr:nth-child(odd) {
+    background-color: var(--branco);
+}
+
 td, th{
+    text-align: center;
+    font-weight: bold;
     border: 2px solid var(--azul-petroleo);
     padding: 10px;
-    text-align: center;
 }
 
 footer{
