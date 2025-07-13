@@ -78,6 +78,7 @@ article.artigo1{
 article.artigo1 > h2 {
     background-image: linear-gradient(to right, var(--azul-claro), #006B73);
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.459);
+    border-top-left-radius: 25px;
     padding: 5px 30px 5px 30px;
     margin-right: 700px;
     font-size: 2em;
