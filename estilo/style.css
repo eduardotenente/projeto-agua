@@ -135,6 +135,12 @@ section#box > h2{
     font-size: 2.5em;
 }
 
+section#box:hover {
+    transform: translate(-3%, -3%);
+    transition: transform .7s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.521);
+}
+
 section.tabela{
     overflow-x: auto;
     margin: 50px 400px 50px 400px;
@@ -237,6 +243,8 @@ footer > section > button > a{
 footer > section > button:hover{
     background-color: #a7d0e6;
     transition-duration: 0.7s;
+    transform: translate(-3%, -3%);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.418);
 }
 
 footer section#credito{
